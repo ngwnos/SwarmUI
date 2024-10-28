@@ -272,6 +272,9 @@
                 <li class="nav-item" role="presentation">
                     <a class="nav-link translate" data-bs-toggle="tab" href="#Tools-Tab" aria-selected="false" tabindex="-1" role="tab">Tools</a>
                 </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link translate" data-bs-toggle="tab" href="#Scratchpad-Tab" aria-selected="false" tabindex="-1" role="tab">Scratchpad</a>
+                </li>
             </ul>
             <div class="tab-content" id="t2i_bottom_bar_content">
                 <div class="tab-pane show active genpage-bottom-tab" id="Image-History-Tab" role="tabpanel">
@@ -376,6 +379,11 @@
                     <div class="tool-container" id="tool_container">
                     </div>
                     <div style="height: 10rem"></div> <!-- Spacer -->
+                </div>
+                <div class="tab-pane genpage-bottom-tab" id="Scratchpad-Tab" role="tabpanel">
+    <div class="scratchpad_container" id="scratchpad_content">
+        <textarea id="scratchpad_textarea" class="scratchpad-textarea" placeholder="Write your notes here..."></textarea>
+                    </div>
                 </div>
             </div>
             @WebUtil.ModalHeader("edit_model_modal", """Edit Model Metadata: <input type="text" class="modal_text_extra" id="edit_model_name" placeholder="Model Name" />""")
@@ -1057,6 +1065,7 @@
     <script src="js/genpage/image_editor.js?vary=@Utilities.VaryID"></script>
     <script src="js/genpage/generatehandler.js?vary=@Utilities.VaryID"></script>
     <script src="js/genpage/simpletab.js?vary=@Utilities.VaryID"></script>
+    <script src="js/genpage/scratchpad.js?vary=@Utilities.VaryID"></script>
     <script src="js/genpage/main.js?vary=@Utilities.VaryID"></script>
     <script src="js/genpage/settings_editor.js?vary=@Utilities.VaryID"></script>
     <script src="js/genpage/logs.js?vary=@Utilities.VaryID"></script>
